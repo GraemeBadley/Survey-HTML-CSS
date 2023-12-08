@@ -13,11 +13,11 @@
     </header>
     <form method="post" id="survey-form">
         <p>Name:</p>
-        <label for="name"><input required type="text" id="name" name="name" placeholder="Enter your name" class="contact placeholder"/></label>
+        <label for="name" id="name-label"><input required type="text" id="name" name="name" placeholder="Enter your name" class="contact placeholder"/></label>
         <p>Email:</p>
-        <label for="email"><input required type="email" id="email" name="email" placeholder="Enter your email" class="contact placeholder"/></label>
+        <label for="email" id="email-label"><input required type="email" id="email" name="email" placeholder="Enter your email" class="contact placeholder"/></label>
         <p>Phone number:</p>
-        <label for="phone-number"><input required type="text" id="phone-number" name="phone-number" placeholder="Enter your phone number" class="contact placeholder"/></label>
+        <label for="number" id="number-label"><input required type="number" id="number" name="number" placeholder="Enter your phone number" class="contact placeholder" pattern="[1-9]{1}[0-9]{9}" min="0" max="999999999"/></label>
         <p>What is your age?</p>
         <label for="18-25" class="radio"><input type="radio" value="18-25" name="age" class="age-radio" id="18-25" required>18-25</label>
         <label for="26-35" class="radio"><input type="radio" value="26-35" name="age" class="age-radio" id="26-35">26-35</label>
@@ -43,8 +43,8 @@
         <label for="recommend-4" class="radio"><input type="radio" value="4" name="recommend" class="age-radio" id="recommend-4">4</label>
         <label for="recommend-5" class="radio"><input type="radio" value="5" name="recommend" class="age-radio" id="recommend-5">5 (Likely)</label>
         <p>Where did you hear about us?</p>
-        <label for="referrer">
-            <select name="referrer" id="referrer" required >
+        <label for="dropdown">
+            <select name="referrer" id="dropdown" required >
                 <option value=""> </option>
                 <option value="1">Social Media</option>
                 <option value="2">Google Search</option>
@@ -53,6 +53,12 @@
                 <option value="5">Other</option>
             </select>
         </label>
+        <p> Which of the following product features have you utilized in the past month? (Check all that apply)</p>
+        <label for="feature-1" class="radio"><input type="checkbox" value="1" name="feature" class="age-radio" id="feature-1">Account Creation</label>
+        <label for="feature-2" class="radio"><input type="checkbox" value="2" name="feature" class="age-radio" id="feature-2">Search Functionality</label>
+        <label for="feature-3" class="radio"><input type="checkbox" value="3" name="feature" class="age-radio" id="feature-3">Profile Customization</label>
+        <label for="feature-4" class="radio"><input type="checkbox" value="4" name="feature" class="age-radio" id="feature-4">Payment Gateway</label>
+        <label for="feature-5" class="radio"><input type="checkbox" value="5" name="feature" class="age-radio" id="feature-5">Messaging/Chat Feature</label>
         <label for="submit"><input type="submit" value="Submit" id="submit"></label>
     </form>
 </body>
