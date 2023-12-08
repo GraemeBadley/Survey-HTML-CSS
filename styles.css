@@ -1,0 +1,96 @@
+*{
+
+    -webkit-box-sizing: border-box ;
+  
+    -moz-box-sizing: border-box ;
+  
+    box-sizing: border-box;
+  
+  }
+
+
+
+html,body{
+    margin: 0;    
+    padding: 0;
+    height: auto;
+    width: 100%;
+    font-family: Helvetica;
+}
+body{
+    background: linear-gradient(115deg,rgba(230, 64, 133, 0.7),rgba(88, 3, 39, 0.7)), url(https://images.pexels.com/photos/1036641/pexels-photo-1036641.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+textarea::placeholder {font-family: Arial;}
+input::placeholder {font-family: Arial;}
+
+h1,p {
+    /* Find Font*/
+    color: white;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+form{
+    width: 50%;
+    height: auto;
+    background-color: rgba(61, 15, 34, 0.8);
+    margin: 2rem auto;
+    border-radius: 10px;
+    padding: 2.5% 5%;
+    color: aliceblue;
+    text-align: left;
+    font-size: 1rem;
+}
+
+form p{
+    text-align: start;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+textarea{
+    height: 10rem;
+}
+
+.placeholder{
+    padding: 1rem 0.5rem;
+    width: 100%;
+}
+
+.contact{
+    display: block;
+    height: 2rem;
+    margin: 1rem 0;
+}
+
+.radio{
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.age-radio{
+    display: inline-block;
+    margin: 0 1%;
+}
+
+select{
+    display: block;
+    height: 2rem;
+    width: 10rem;
+}
+
+input[type="Submit"]{
+    border: none;
+    border-radius: 10px;
+    font-family: Helvetica;
+    color: white;
+    font-size: 1.25rem;
+    margin: 1.5rem 15%;
+    width: 70%;
+    height: 2.5rem;
+    background-color: rgba(30, 42, 210, 0.781);
+}

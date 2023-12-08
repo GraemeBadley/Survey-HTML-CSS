@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>FeedBack Survey</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">User Experience Feedback</h1>
+        <p id="description">Please respond to all questions. Thanks you!</p>
+    </header>
+    <form method="post" id="survey-form">
+        <p>Name:</p>
+        <label for="name"><input required type="text" id="name" name="name" placeholder="Enter your name" class="contact placeholder"/></label>
+        <p>Email:</p>
+        <label for="email"><input required type="email" id="email" name="email" placeholder="Enter your email" class="contact placeholder"/></label>
+        <p>Phone number:</p>
+        <label for="phone-number"><input required type="text" id="phone-number" name="phone-number" placeholder="Enter your phone number" class="contact placeholder"/></label>
+        <p>What is your age?</p>
+        <label for="18-25" class="radio"><input type="radio" value="18-25" name="age" class="age-radio" id="18-25" required>18-25</label>
+        <label for="26-35" class="radio"><input type="radio" value="26-35" name="age" class="age-radio" id="26-35">26-35</label>
+        <label for="36-45" class="radio"><input type="radio" value="36-45" name="age" class="age-radio" id="36-45">36-45</label>
+        <label for="46+" class="radio"><input type="radio" value="46+" name="age" class="age-radio" id="46+">46+</label>
+        <p>How often do you use our product?</p>
+        <label for="Daily" class="radio"><input type="radio" value="Daily" name="usage" class="age-radio" id="Daily" required>Daily</label>
+        <label for="Weekly" class="radio"><input type="radio" value="Weekly" name="usage" class="age-radio" id="Weekly">Weekly</label>
+        <label for="Monthly" class="radio"><input type="radio" value="Monthly" name="usage" class="age-radio" id="Monthly">Monthly</label>
+        <label for="Rarely" class="radio"><input type="radio" value="Rarely" name="usage" class="age-radio" id="Rarely">Rarely</label>
+        <p>On a scale of 1 to 5, how satisfied are you with our product?</p>
+        <label for="satisfied-1" class="radio"><input type="radio" value="1" name="satisfied" class="age-radio" id="satisfied-1" required>1 (Very Dissatisfied)</label>
+        <label for="satisfied-2" class="radio"><input type="radio" value="2" name="satisfied" class="age-radio" id="satisfied-2">2</label>
+        <label for="satisfied-3" class="radio"><input type="radio" value="3" name="satisfied" class="age-radio" id="satisfied-3">3</label>
+        <label for="satisfied-4" class="radio"><input type="radio" value="4" name="satisfied" class="age-radio" id="satisfied-4">4</label>
+        <label for="satisfied-5" class="radio"><input type="radio" value="5" name="satisfied" class="age-radio" id="satisfied-5">5 (Very Satisfied)</label>
+        <p>What features would you like to see improved/added?</p>
+        <textarea name="improvements" id="comments" placeholder="Enter your comments here" class="placeholder"></textarea>
+        <p>How likely are you to recommend our product/service to a friend or colleague?</p>
+        <label for="recommend-1" class="radio"><input type="radio" value="1" name="recommend" class="age-radio" id="recommend-1" required>1 (Not Likely)</label>
+        <label for="recommend-2" class="radio"><input type="radio" value="2" name="recommend" class="age-radio" id="recommend-2">2</label>
+        <label for="recommend-3" class="radio"><input type="radio" value="3" name="recommend" class="age-radio" id="recommend-3">3</label>
+        <label for="recommend-4" class="radio"><input type="radio" value="4" name="recommend" class="age-radio" id="recommend-4">4</label>
+        <label for="recommend-5" class="radio"><input type="radio" value="5" name="recommend" class="age-radio" id="recommend-5">5 (Likely)</label>
+        <p>Where did you hear about us?</p>
+        <label for="referrer">
+            <select name="referrer" id="referrer" required >
+                <option value=""> </option>
+                <option value="1">Social Media</option>
+                <option value="2">Google Search</option>
+                <option value="3">Referral</option>
+                <option value="4">Advertisement</option>
+                <option value="5">Other</option>
+            </select>
+        </label>
+        <label for="submit"><input type="submit" value="Submit" id="submit"></label>
+    </form>
+</body>
+</html>
